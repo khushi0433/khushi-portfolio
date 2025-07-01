@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>My portfolio</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#resume" class="nav__link">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav__link">Contact Me</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-fill"></i>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-2-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <img src="assets/profileimg.jpg" alt="Profile" class="home__img">
+                <div class="home__data">
+                    <h1 class="home__name">Khushi baloch_</h1>
+                    <p class="home__work">Full Stack Developer, React Developer</p>
+                    <dl class="home__list">
+                        <dt>AGE:</dt>
+                        <dd>21</dd>
+                        <dt>Phone:</dt>
+                        <dd>+92 3021884972</dd>
+                        <dt>Email:</dt>
+                        <dd>fatimahbaloch917@gmail.com</dd>
+                        <dt>ADDRESS:</dt>
+                        <dd>Hurcamp colony herabad hyderabaad</dd>
+                    </dl>
+                    <div class="home__socials">
+                        <a href="https://github.com/khushi0433" target="_blank" class="home__social-link">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/khushi-baloch-789013365/" target="_blank" class="home__social-link">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="https://x.com/khushi19807" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hello section container">
+            <h1 class="section__title">Hello, I'm Khushi_</h1>
+            <p class="hello__details text-lg">Full-stack developer skilled in building responsive and scalable web applications. 
+                Proficient in front-end technologies like React, Tailwind CSS, and JavaScript, as well as back-end tools including python, 
+                django, and sql. Experienced in creating clean, maintainable code, RESTful APIs, and seamless user interfaces. Projects range 
+                from landing pages to full-featured dashboards and e-commerce platforms, with a focus on performance, accessibility, and cross-device 
+                compatibility.</p>
+            <a href="assets/img/Khushi+Cv-compressed.pdf" class="button button--flex text-sm">
+                Download CV
+                <i class="ri-mail-download-fill"></i>
+            </a>
+        </section>
+
+        <!--Services-->
+        <section class="services section container" id="services">
+            <h2 class="section__title">Services_</h2>
+            <div class="services__container grid">
+                <!-- Service 1 -->
+                <div class="services__item">
+                    <div class="icon__box">
+                        <img src="assets/img/laptop.png" alt="Web Design Icon" class="services__icon" />
+                        <div class="services__dot">
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <h3 class="services__title text-lg">Web Development</h3>
+                    <p class="services__details">
+                        I build responsive, high-performance websites using modern technologies like HTML, CSS, JavaScript, and React. Every site is optimized for speed, accessibility, and mobile-first design.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="services__item">
+                    <div class="icon__box">
+                        <img src="assets/img/smartphone-call.png" alt="Backend Icon" class="services__icon" />
+                        <div class="services__dot">
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <h3 class="services__title text-lg">Backend Development</h3>
+                    <p class="services__details">
+                        I create scalable backend systems using Python, Django, and SQL. From RESTful APIs to secure data handling, I focus on clean architecture and seamless integration with the frontend.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="services__item">
+                    <div class="icon__box">
+                        <img src="assets/img/paint-palette.png" alt="Web Design Icon" class="services__icon" />
+                        <div class="services__dot">
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <h3 class="services__title text-lg">Web Design</h3>
+                    <p class="services__details">
+                        I craft visually appealing and user-friendly interfaces with a focus on UX principles. Whether it's a landing page or a dashboard, I turn ideas into elegant digital experiences.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--resume section-->
+        <section class="section container" id="resume">
+            <h2 class="section__title">Resume_</h2>
+            <div class="resume__container grid">
+                <div class="resume__data">
+                    <h3 class="resume__title text-sm">EDUCATION</h3>
+                    <div class="resume__item">
+                        <h3 class="resume__subtitle text-sm">Bachelor of Technology</h3>
+                        <p class="resume__details text-sm">Computer Science Engineering</p>
+                        <p class="resume__details text-sm">2023–2027</p>
+                    </div>
+                    <div class="resume__item">
+                        <h3 class="resume__subtitle text-sm">School of Syed Baz Muhammad Shah</h3>
+                        <p class="resume__details text-sm">Medical Science</p>
+                        <p class="resume__details text-sm">2007–2019</p>
+                        <p class="resume__description text-lg">
+                            I was a dedicated and high-achieving student throughout my school years. With strong curiosity and consistent discipline, I actively participated in academics and extracurriculars, laying a solid foundation for my tech journey.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="resume__data">
+                    <h3 class="resume__title text-sm">EMPLOYMENT</h3>
+                    <div class="resume__item">
+                        <h3 class="resume__subtitle text-sm">Freelance Full Stack Developer</h3>
+                        <p class="resume__details text-sm">Upwork, Remote</p>
+                        <p class="resume__details text-sm">2024–Present</p>
+                        <p class="resume__description text-lg">
+                            Built scalable and responsive web applications for clients across different industries.
+                            Worked on both frontend and backend technologies like React, Tailwind CSS, Python, and Django. Delivered clean and maintainable code with a strong focus on performance and user 
+                            experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects section -->
+        <section class="work section container" id="projects">
+            <h2 class="section__title">Projects_</h2>
+            <div class="project__categories">
+                <button class="category__btn text-xs active-work" data-filter="all">All_</button>
+                <button class="category__btn text-xs" data-filter=".web">Web-sites_</button>
+                <button class="category__btn text-xs" data-filter=".landing">Landing Pages_</button>
+            </div>
+            <div class="project__container grid">
+                <!-- Todo App -->
+                <div class="project__item grid mix landing">
+                    <img src="assets/img/project1.jpg" alt="Todo App Preview" class="project__img" />
+                    <div class="project__data">
+                        <h3 class="project__title text-lg">Todo App</h3>
+                        <p class="project__details text-sm">
+                            A clean and responsive Todo App to add, manage, and track daily tasks. Built with React and Tailwind CSS for a smooth user experience.
+                        </p>
+                        <h4 class="project__stack text-sm">Tech Stack:</h4>
+                        <ul class="tags text-sm">
+                            <li>React</li>
+                            <li>Tailwind CSS</li>
+                            <li>Vite</li>
+                            <li>JavaScript</li>
+                            <li>Netlify</li>
+                        </ul>
+                        <a href="https://todo-app-chi-topaz-42.vercel.app/" class="project__link text-sm" target="_blank">View Live</a>
+                    </div>
+                </div>
+
+                <!-- Wanderlust Holidays -->
+                <div class="project__item grid mix web">
+                    <img src="assets/img/project2.png" alt="Wanderlust Holidays Preview" class="project__img" />
+                    <div class="project__data">
+                        <h3 class="project__title text-lg">Wanderlust Holidays</h3>
+                        <p class="project__details text-sm">
+                            A travel website offering curated vacation packages with a sleek, user-friendly design and engaging content.
+                        </p>
+                        <h4 class="project__stack text-sm">Tech Stack:</h4>
+                        <ul class="tags text-sm">
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Python</li>
+                            <li>Vercel</li>
+                        </ul>
+                        <a href="https://wanderlustholidays.netlify.app/" class="project__link text-sm" target="_blank">View Live</a>
+                    </div>
+                </div>
+
+                <!-- PixelCraft Studioz -->
+                <div class="project__item grid mix web">
+                    <img src="assets/img/project3.png" alt="PixelCraft Studioz Preview" class="project__img" />
+                    <div class="project__data">
+                        <h3 class="project__title text-lg">PixelCraft Studioz</h3>
+                        <p class="project__details text-sm">
+                            A modern portfolio-style studio website for a digital design company, focused on showcasing work and services.
+                        </p>
+                        <h4 class="project__stack text-sm">Tech Stack:</h4>
+                        <ul class="tags text-sm">
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                            <li>django</li>
+                            <li>Vercel</li>
+                        </ul>
+                        <a href="https://pixelcraftstudioz.netlify.app/" class="project__link text-sm" target="_blank">View Live</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section">
+            <div class="testimonial__bg">
+                <div class="testimonial__icon">
+                    <i class="ri-double-quotes-r"></i>
+                </div>
+                <div class="swiper testimonial__container container">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide testimonial__item">
+                            <h3 class="author__name text-lg">Ayaan Qureshi</h3>
+                            <p class="author__project">React Portfolio Website</p>
+                            <div class="ruler"></div>
+                            <p class="testimonial__description text-lg">
+                                "Khushi demonstrated outstanding professionalism and technical expertise while developing our company's client dashboard. 
+                                She seamlessly integrated complex data visualization components with a React-based frontend and connected it to a Django backend 
+                                API with zero delays. Her attention to clean UI design, responsive layout, and performance optimization made a huge
+                                difference in the final product. We received positive feedback from our clients the very first week after launch." 
+                            </p>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide testimonial__item">
+                            <h3 class="author__name text-lg">Fatima Noor</h3>
+                            <p class="author__project">E-commerce Dashboard</p>
+                            <div class="ruler"></div>
+                            <p class="testimonial__description text-lg">
+                                "Khushi built our admin dashboard with incredible speed and clarity. Her ability to connect the frontend with a 
+                                solid Django backend saved us weeks of work."
+                            </p>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide testimonial__item">
+                            <h3 class="author__name text-lg">Ali Hassan</h3>
+                            <p class="author__project">Landing Page Redesign</p>
+                            <div class="ruler"></div>
+                            <p class="testimonial__description text-lg">
+                                "Loved the redesign! She perfectly captured our brand's aesthetic with modern HTML/CSS and animations. 
+                                Khushi transformed our outdated site into a high-converting landing page. Her React and Tailwind CSS skills 
+                                brought our brand to life beautifully."
+                            </p>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="swiper-slide testimonial__item">
+                            <h3 class="author__name text-lg">Zoya Khan</h3>
+                            <p class="author__project">Full-Stack Travel App</p>
+                            <div class="ruler"></div>
+                            <p class="testimonial__description text-lg">
+                                "Khushi is a highly skilled full-stack dev. Her work on the frontend and backend made the project seamless!"
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Navigation and pagination -->
+                    <div class="swiper-button-next">
+                        <img src="assets/img/arrow-next.svg" alt="Next" />
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img src="assets/img/arrow-prev.svg" alt="Previous" />
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="contact section" id="contact">
+        <div class="contact__content container">
+            <h2 class="section__title">Get in Touch</h2>
+            <div class="contact__container grid">
+                <!-- Contact Info -->
+                <div class="contact__info">
+                    <dl class="contact__list">
+                        <dt>Phone:</dt>
+                        <dd>+92 (302) 1884972</dd>
+                        <dt>Github:</dt>
+                        <dd>khushi0433</dd>
+                        <dt>Email:</dt>
+                        <dd>fatimahbaloch917@gmail.com</dd>
+                    </dl>
+                    <!-- Social Links -->
+                    <ul class="contact__socials">
+                        <li>
+                            <a href="https://www.upwork.com/freelancers/~01626b34fb15c459c0" class="contact__social-link">Upwork</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/khushi-baloch-789013365/" class="contact__social-link">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/khushi19807" class="contact__social-link">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact__form">
+                    <p class="contact__form-title">Or Write Me a Letter Here</p>
+                    <form action="" id="contact-form">
+                        <div class="contact__input-div">
+                            <input
+                                type="text"
+                                id="contact-name"
+                                name="name"
+                                placeholder="Your Name"
+                                class="contact__input"
+                                required
+                            />
+                        </div>
+                        <div class="contact__input-div">
+                            <input
+                                type="email"
+                                id="contact-email"
+                                name="email"
+                                placeholder="Your Email"
+                                class="contact__input"
+                                required
+                            />
+                        </div>
+                        <div class="contact__input-div">
+                            <textarea
+                                name="message"
+                                id="message"
+                                cols="30"
+                                rows="10"
+                                placeholder="Your Message Here"
+                                class="contact__input textarea"
+                                required
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="button button--flex contact__button">
+                            Send Message
+                        </button>
+                    </form>
+                    <p id="contact-Message" class="contact__message"></p>
+                </div>
+            </div>
+            <p class="footer__copy">
+                &copy; Copyright 2023. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
