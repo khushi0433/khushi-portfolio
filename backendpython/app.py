@@ -4,11 +4,11 @@ import smtplib
 from email.message import EmailMessage
 
 app = Flask(__name__)
-CORS(app)  # Allow frontend to call the API
+CORS(app)
 
-# === Configure Your Email Credentials ===
-EMAIL_ADDRESS = 'fatimahbaloch917@gmail.com'         # ← change this to your Gmail
-EMAIL_PASSWORD = 'qptupsphwifccuyt'      # ← use your Gmail App Password
+# ✅ Use hardcoded credentials since we tested them
+EMAIL_ADDRESS = 'fatimahbaloch917@gmail.com'
+EMAIL_PASSWORD = 'ehlwqjvfvhurdzbu'
 
 @app.route('/send-email', methods=['POST'])
 def send_email():
@@ -27,6 +27,7 @@ def send_email():
         msg['Subject'] = f'New Message from {name}'
         msg['From'] = EMAIL_ADDRESS
         msg['To'] = EMAIL_ADDRESS
+        msg['Reply-To'] = email
         msg.set_content(f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}")
 
         print("📤 Sending email...")

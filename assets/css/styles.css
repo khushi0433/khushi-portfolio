@@ -815,11 +815,12 @@ textarea, input {
         right: -100%;
         width: 75%;
         height: 100vh;
-        background-color: var(--bg-color);
+        background-color: rgba(0, 0, 0, 0.9);
         padding: 4rem 0 0 3rem;
         border-radius: 1rem 0 0 1rem;
         box-shadow: -2px 0 4px hsla(0, 0%, 1%, .15);
         transition: .3s;
+        backdrop-filter: blur(10px)
     }
     
     .nav__list {
