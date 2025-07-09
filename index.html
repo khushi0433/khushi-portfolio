@@ -55,13 +55,13 @@
                         <dd>Hurcamp colony herabad hyderabaad</dd>
                     </dl>
                     <div class="home__socials">
-                        <a href="https://github.com/khushi0433" target="_blank" class="home__social-link">
+                        <a href="https://github.com/khushi0433" target="_blank" class="home__social-link" aria-label="GitHub Profile">
                             <i class="ri-github-fill"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/khushi-baloch-789013365/" target="_blank" class="home__social-link">
+                        <a href="https://www.linkedin.com/in/khushi-baloch-789013365/" target="_blank" class="home__social-link" aria-label="LinkedIn Profile">
                             <i class="ri-linkedin-fill"></i>
                         </a>
-                        <a href="https://x.com/khushi19807" target="_blank" class="home__social-link">
+                        <a href="https://x.com/khushi19807" target="_blank" class="home__social-link" aria-label="Twitter Profile">
                             <i class="ri-twitter-fill"></i>
                         </a>
                     </div>
@@ -333,44 +333,49 @@
                 </div>
 
                 <!-- Contact Form -->
-                <div class="contact__form">
-                    <p class="contact__form-title">Or Write Me a Letter Here</p>
-                    <form action="" id="contact-form">
-                        <div class="contact__input-div">
-                            <input
-                                type="text"
-                                id="contact-name"
-                                name="name"
-                                placeholder="Your Name"
-                                class="contact__input"
-                                required
-                            />
-                        </div>
-                        <div class="contact__input-div">
-                            <input
-                                type="email"
-                                id="contact-email"
-                                name="email"
-                                placeholder="Your Email"
-                                class="contact__input"
-                                required
-                            />
-                        </div>
-                        <div class="contact__input-div">
-                            <textarea
-                                name="message"
-                                id="message"
-                                cols="30"
-                                rows="10"
-                                placeholder="Your Message Here"
-                                class="contact__input textarea"
-                                required
-                            ></textarea>
-                        </div>
-                        <button type="submit" class="button button--flex contact__button">
-                            Send Message
-                        </button>
-                    </form>
+                <form action="https://formsubmit.io/send/fatimahbaloch917@gmail.com" method="POST" id="contact-form">
+                    <!-- Anti-spam honeypot field -->
+                    <input type="text" name="_honey" style="display:none">
+                  
+                    <!-- Optional redirect after submission -->
+                    <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html" />
+                  
+                    <div class="contact__input-div">
+                      <input
+                        type="text"
+                        id="contact-name"
+                        name="name"
+                        placeholder="Your Name"
+                        class="contact__input"
+                        required
+                      />
+                    </div>
+                    <div class="contact__input-div">
+                      <input
+                        type="email"
+                        id="contact-email"
+                        name="email"
+                        placeholder="Your Email"
+                        class="contact__input"
+                        required
+                      />
+                    </div>
+                    <div class="contact__input-div">
+                      <textarea
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="10"
+                        placeholder="Your Message Here"
+                        class="contact__input textarea"
+                        required
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="button button--flex contact__button">
+                      Send Message
+                    </button>
+                  </form>
+                  
                     <p id="contact-Message" class="contact__message"></p>
                 </div>
             </div>

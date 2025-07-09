@@ -336,6 +336,7 @@ textarea, input {
     justify-content: center;
     align-items: center;
     background-color: #fff;
+
 }
 
 .services__icon {
@@ -372,10 +373,10 @@ textarea, input {
 
 @keyframes spin {
     0% {
-        transform: rotate(0deg) translateX(35px);
+        transform: rotate(0deg) translateX(40.9px);
     }
     100% {
-        transform: rotate(360deg) translateX(35px);
+        transform: rotate(355deg) translateX(39.7px);
     }
 }
 
@@ -978,3 +979,32 @@ textarea, input {
         font-size: 0.65rem;
     }
 }
+
+a:focus,
+button:focus,
+.category__btn:focus,
+.contact__button:focus {
+  outline: 2px solid #00bcd4;
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+    .dot {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .home__name,
+    .home__work,
+    .home__list,
+    .hello__details,
+    .section__title,
+    .project__title,
+    .project__details,
+    .resume__description,
+    .testimonial__description,
+    .contact__form-title {
+      text-align: left !important;
+    }
+  }
+  

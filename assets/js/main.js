@@ -1,4 +1,3 @@
-
 // Mobile Navigation
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -114,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 })
 
-
+// === Local Python backend submission ===
 document.addEventListener('DOMContentLoaded', function () {
   const contactForm = document.getElementById('contact-form');
 
@@ -154,4 +153,25 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
   }
+});
+
+// === Duplicate FormSubmit handler (this should be removed if using local backend) ===
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const form = e.target;
+
+  fetch(form.action, {
+    method: form.method,
+    body: new FormData(form),
+    headers: {
+      Accept: "application/json",
+    },
+  }).then(response => {
+    if (response.ok) {
+      alert("Message sent successfully!");
+      form.reset();
+    } else {
+      alert("There was a problem. Please try again later.");
+    }
+  });
 });
